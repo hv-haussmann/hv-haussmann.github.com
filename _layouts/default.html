@@ -1,44 +1,111 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>{{ page.title }}</title>
-        <meta name="viewport" content="width=device-width">
+<head>
+  <meta charset=utf-8 />
+  <title> {% if page.title %} {{ page.title }} | {% endif %} Hausverwaltung &amp; Immobilien Bärbel Haußmann GmbH &amp; Co.KG </title>
+  <link rel="stylesheet" href="/css/layout.css" />
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+</head>
+<body>
+  <!-- jQuery -->
+  <script type="text/javascript" src="/js/jquery-1.11.0.min.js"></script>
+  <!-- Include the hashgrid script -->
+  <script type="text/javascript" src="/js/hashgrid.js"></script>
+ 
+  <div id="tagline">
+    <div class="container">
+      <div class="sixteen columns">
+        <span><img src="http://placehold.it/16x16/9bbd78/&text=+" />info@hv-haussmann.de</span>
+        <span><img src="http://placehold.it/16x16/9bbd78/&text=+" />(030) 86 10 36 4</span>
+      </div>
+    </div>
+  </div>
+  
+  <div id="header" class="container">
+    <div class="sixteen columns">
+      <div class="five columns alpha">
+        <img src="http://placehold.it/220x78" \>
+      </div>
+      <div class="eleven columns omega">
+        <h1> Hausverwaltung &amp; Immobilien</h1>
+        <h2> Bärbel Haußmann GmbH &amp; Co.KG <h2>     
+      </div>
+    </div>
+  </div>
 
-        <!-- syntax highlighting CSS -->
-        <link rel="stylesheet" href="/css/syntax.css">
+  <div id="banner">&nbsp;</div>
 
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="/css/main.css">
+  <div id="navigation" class="container">
+    <div class="sixteen columns">
+      <ul>
+        <li><a href="/">Start</a></li>
+        <li><a href="/about/">Über uns</a></li>
+        <li><a href="/references/">Referenzen</a></li>
+        <li><a href="/contact/">Kontakt</a></li>
+      </ul>
+    </div>
+  </div>
 
-    </head>
-    <body>
-
-        <div class="site">
-          <div class="header">
-            <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-            <a class="extra" href="/">home</a>
+  <section class="content">
+    <div class="container">
+      <div class="sixteen columns">
+        {{ content }}
+      </div>
+    </div>
+  </div>
+ 
+  <footer>
+    <div class="container">
+      <div class="sixteen columns">
+        <div class="eight columns alpha">
+          <div class="four columns alpha">
+            <h3>Kotakt</h3>
+            <ul>
+              <li>Tel: +49 03 86 10 36 4</li>
+              <li>Fax: +49 03 86 42 37 53</li>
+              <li>E-Mail: info@hv-haussmann.de</li>
+            </ul>
           </div>
-
-          {{ content }}
-
-          <div class="footer">
-            <div class="contact">
-              <p>
-                Your Name<br />
-                What You Are<br />
-                you@example.com
-              </p>
-            </div>
-            <div class="contact">
-              <p>
-                <a href="https://github.com/yourusername">github.com/yourusername</a><br />
-                <a href="https://twitter.com/yourusername">twitter.com/yourusername</a><br />
-              </p>
-            </div>
+          <div class="four columns omega">
+            <h3>Sprechzeiten</h3>
+            <ul>
+              <li>Mo, Mi, Fr:</li>
+              <li>9:00 Uhr bis 12:00 Uhr</li>
+              <li>Di, Do:</li>
+              <li>9:00 Uhr bis 12:00 Uhr und 13:00 Uhr bis 15:00 Uhr</li>
+            </ul>
           </div>
         </div>
+        <div class="eight columns omega">
+          <div class="four columns alpha">
+            <h3>Adresse</h3>
+            <ul>
+              <li>Hausverwaltung &amp; Immobilien Bärbel Haußmann GmbH & Co. KG</li>
+              <li>Nassauische Straße 22</li>
+              <li>10717 Berlin</li>
+            </ul>
+          </div>
+          <div class="four columns omega">
+            <h3>Sitemap</h3>
+            <ul>
+              <li>Start</li>
+              <li>Über uns</li>
+              <li>Referenzen</li>
+              <li>Kontakt</li>
+              <li>Impressum</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 
-    </body>
+  <div id="imprint">
+    <div class="container">
+      <div class="sixteen columns">
+        <p>© hv-haussmann.de 2014 &middot; Impressum </p>
+      </div>
+    </div>
+  </div>
+</body>
 </html>
