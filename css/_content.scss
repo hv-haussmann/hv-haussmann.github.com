@@ -1,0 +1,72 @@
+#start {
+	margin-bottom: $baseline;
+}
+
+/* #Lists
+================================================== */
+
+ul {
+	list-style-image: url(../img/rightarrow.gif);
+	margin-bottom: $baseline;
+	margin-left: 23px;
+}
+
+.list-unstyled {
+	list-style: none;
+	margin: 0px;
+}
+
+.list-grid {
+	@extend .list-unstyled;
+
+	li {
+		float: left;
+		padding-right: 20px;
+		padding-bottom: $baseline;
+
+		&.last {
+			padding-right: 0px;
+		}
+	}
+}
+
+/* #Images
+================================================== */
+
+img {
+	vertical-align: middle;
+}
+
+/* #Links
+================================================== */
+
+a {
+
+	border-bottom: 1px dotted;
+	text-decoration: none;
+
+	-webkit-transition: background-color 0.5s ease;
+	-moz-transition: background-color 0.5s ease;
+	-o-transition: background-color 0.5s ease;
+	transition: background-color 0.5s ease;
+
+	&:hover {
+			background-color: darken( $colorBG, 10% );
+	}
+
+	&.link-inverted {
+		color: $colorImp;
+		border-bottom: 1px dotted $colorImp;
+
+		&:hover {
+			background-color: lighten( $colorTopBottom, 10% );
+		}
+	}
+
+	&.link-footer:hover {
+		background-color: lighten( $colorFooter, 10% );
+	}
+}
+
+
+// Buttons

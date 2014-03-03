@@ -1,7 +1,8 @@
 #tagline {
+ height: 2*$baseline;
+ line-height: 2*$baseline;
  background-color: $colorTopBottom;
  color: $colorImp;
-
 
  span {
  	float: right;
@@ -22,6 +23,8 @@
 		display: inline;
 		text-transform: uppercase;
 	}
+
+	h1, h2 { float: right; }
 }
 
 #banner {
@@ -32,7 +35,6 @@
 }
 
 #navigation {
-
 	margin-bottom: 2*$baseline;
 
 	div {
@@ -54,15 +56,27 @@
 			text-transform: uppercase;
 
 			a {
+				display: block;
 				text-decoration: none;
 				font-weight: bold;
+				border: 0px;
+
+				&:hover {
+					background-color: $colorFooter;
+				}
+
+				&.current {
+					background-color: $colorTopBottom;
+					color: $colorBG;
+				}
 			}
+
 		}
 	}
 }
 
 footer {
-	margin-top: 2*$baseline;
+	margin-top: $baseline;
 	padding-top: $baseline;
 	padding-bottom: $baseline;
 	background-color: $colorFooter;

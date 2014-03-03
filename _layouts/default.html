@@ -15,7 +15,7 @@
   <div id="tagline">
     <div class="container">
       <div class="sixteen columns">
-        <span><img src="http://placehold.it/16x16/9bbd78/&text=+" />info@hv-haussmann.de</span>
+        <span><img src="http://placehold.it/16x16/9bbd78/&text=+" /><a class="link-inverted" href="mailto:info@hv-haussmann.de">info@hv-haussmann.de</a></span>
         <span><img src="http://placehold.it/16x16/9bbd78/&text=+" />(030) 86 10 36 4</span>
       </div>
     </div>
@@ -28,7 +28,7 @@
       </div>
       <div class="eleven columns omega">
         <h1> Hausverwaltung &amp; Immobilien</h1>
-        <h2> Bärbel Haußmann GmbH &amp; Co.KG <h2>     
+        <h2> Bärbel Haußmann GmbH &amp; Co.KG </h2>     
       </div>
     </div>
   </div>
@@ -38,10 +38,11 @@
   <div id="navigation" class="container">
     <div class="sixteen columns">
       <ul>
-        <li><a href="/">Start</a></li>
-        <li><a href="/about/">Über uns</a></li>
-        <li><a href="/references/">Referenzen</a></li>
-        <li><a href="/contact/">Kontakt</a></li>
+        {% assign current = page.url | downcase | split: '/' %}
+        <li><a href="/" {% if current[1] == 'index.html' %}class='current'{% endif %}>Start</a></li>
+        <li><a href="/about/" {% if current[1] == 'about' %}class='current'{% endif %}>Über uns</a></li>
+        <li><a href="/references/" {% if current[1] == 'references' %}class='current'{% endif %}>Referenzen</a></li>
+        <li><a href="/contact/" {% if current[1] == 'contact' %}class='current'{% endif %}>Kontakt</a></li>
       </ul>
     </div>
   </div>
@@ -60,15 +61,15 @@
         <div class="eight columns alpha">
           <div class="four columns alpha">
             <h3>Kotakt</h3>
-            <ul>
+            <ul class="list-unstyled">
               <li>Tel: +49 03 86 10 36 4</li>
               <li>Fax: +49 03 86 42 37 53</li>
-              <li>E-Mail: info@hv-haussmann.de</li>
+              <li>E-Mail: <a class="link-footer" href="mailto:info@hv-haussmann.de">info@hv-haussmann.de</a></li>
             </ul>
           </div>
           <div class="four columns omega">
             <h3>Sprechzeiten</h3>
-            <ul>
+            <ul class="list-unstyled">
               <li>Mo, Mi, Fr:</li>
               <li>9:00 Uhr bis 12:00 Uhr</li>
               <li>Di, Do:</li>
@@ -79,20 +80,20 @@
         <div class="eight columns omega">
           <div class="four columns alpha">
             <h3>Adresse</h3>
-            <ul>
-              <li>Hausverwaltung &amp; Immobilien Bärbel Haußmann GmbH & Co. KG</li>
+            <ul class="list-unstyled">
+              <li>Hausverwaltung &amp; Immobilien Bärbel Haußmann GmbH &amp; Co. KG</li>
               <li>Nassauische Straße 22</li>
               <li>10717 Berlin</li>
             </ul>
           </div>
           <div class="four columns omega">
             <h3>Sitemap</h3>
-            <ul>
-              <li>Start</li>
-              <li>Über uns</li>
-              <li>Referenzen</li>
-              <li>Kontakt</li>
-              <li>Impressum</li>
+            <ul class="list-unstyled">
+              <li><a class="link-footer" href="/">Start</a></li>
+              <li><a class="link-footer" href="/about/">Über uns</a></li>
+              <li><a class="link-footer" href="/references/">Referenzen</a></li>
+              <li><a class="link-footer" href="/contact/">Kontakt</a></li>
+              <li><a class="link-footer" href="/imprint/">Impressum</a></li>
             </ul>
           </div>
         </div>
@@ -103,7 +104,7 @@
   <div id="imprint">
     <div class="container">
       <div class="sixteen columns">
-        <p>© hv-haussmann.de 2014 &middot; Impressum </p>
+        <p>© hv-haussmann.de &middot; 2014 &middot; <a class="link-inverted" href="/imprint/">Impressum</a> </p>
       </div>
     </div>
   </div>
