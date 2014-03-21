@@ -1,3 +1,7 @@
+body {
+	overflow-y: scroll;
+}
+
 #tagline {
  height: 2*$baseline;
  line-height: 2*$baseline;
@@ -28,7 +32,7 @@
 }
 
 #banner {
-	background-image:url("../img/banner.gif");
+	background-image:url("../img/banner.png");
 	background-position: center;
 	background-repeat: repeat-x;
 	height: 5*$baseline;
@@ -78,10 +82,15 @@
 footer {
 	margin-top: $baseline;
 	padding-top: $baseline;
-	padding-bottom: $baseline;
 	background-color: $colorFooter;
 	font-size: 14px;
 	line-height: 26px;
+
+	.container {
+		background-image: url(../img/logo_part_building.png);
+		background-repeat: no-repeat;
+		background-position: right bottom;
+	}
 }
 
 #imprint {

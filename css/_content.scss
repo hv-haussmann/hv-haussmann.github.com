@@ -1,4 +1,4 @@
-#start {
+#start, #map {
 	margin-bottom: $baseline;
 }
 
@@ -6,28 +6,18 @@
 ================================================== */
 
 ul {
-	list-style-image: url(../img/rightarrow.gif);
+	list-style-image: url(../img/rightarrow.png);
 	margin-bottom: $baseline;
 	margin-left: 23px;
+
+	li {
+		padding: 0px 0px 0px 0px;
+	}
 }
 
 .list-unstyled {
 	list-style: none;
-	margin: 0px;
-}
-
-.list-grid {
-	@extend .list-unstyled;
-
-	li {
-		float: left;
-		padding-right: 20px;
-		padding-bottom: $baseline;
-
-		&.last {
-			padding-right: 0px;
-		}
-	}
+	margin: 0px 0px $baseline 0px;
 }
 
 /* #Images
@@ -37,10 +27,60 @@ img {
 	vertical-align: middle;
 }
 
+img.grayscale {
+  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 3.5+ */
+  filter: gray; /* IE6-9 */
+  -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
+}
+
+img.grayscale:hover {
+  filter: none;
+  -webkit-filter: grayscale(0%);
+}
+
+.image-container {
+	float: left;
+	margin-right: 20px;
+	margin-bottom: $baseline;
+	position: relative;
+
+	.image-container-content {
+		position: absolute;
+		width: 100%;
+		height: 2*$baseline;
+		background-color: rgba(155,189,120,0.85);
+		color: $colorBG;
+		top: 312px - 2*$baseline;
+		text-align: center;
+		left: 0;
+
+		span {
+			display: block;
+		}
+	}
+
+	&.small {
+		width: 220px;
+		height: 312px;
+	}
+
+	&.big {
+		width: 460px;
+		height: 312px;
+	}
+
+	&.last {
+		margin-right: 0px;
+	}
+}
+
 /* #Links
 ================================================== */
-
 a {
+	text-decoration: none;
+}
+
+a.link {
 
 	border-bottom: 1px dotted;
 	text-decoration: none;
