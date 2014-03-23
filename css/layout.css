@@ -906,6 +906,11 @@ footer {
 #start, #map {
   margin-bottom: 26px; }
 
+#start span {
+  margin-left: 13px; }
+#start p {
+  margin-bottom: 130px; }
+
 /* #Lists
 ================================================== */
 ul {

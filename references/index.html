@@ -2,16 +2,17 @@
 layout: default
 title: Referenzen
 ---
-<h2>Einige unserer Referenzobjekte in Berlin</h2>
 
+<div class="sixteen columns">
+	<h2>Einige unserer Referenzobjekte in Berlin</h2>
 
-{% for post in site.posts %}
-<div {% if forloop.index == 4 or forloop.index == 6 or forloop.index == 8 or forloop.index == 10 %} class="image-container last" {% else %} class="image-container" {% endif %}>
-  <img class="grayscale" src="{{ post.image }}" width="{{ post.width }}" height="{{ post.height}}" />
-  <div class="image-container-content">
-    <span>{{ post.street }}</span>
-    <span>{{ post.distr }}</span>
-  </div>
+	{% for post in site.posts %}
+	<div {% if forloop.index == 4 or forloop.index == 6 or forloop.index == 8 or forloop.index == 10 %} class="image-container last" {% else %} class="image-container" {% endif %}>
+	  <img class="grayscale" src="{{ post.image }}" width="{{ post.width }}" height="{{ post.height}}" />
+	  <div class="image-container-content">
+	    <span>{{ post.street }}</span>
+	    <span>{{ post.distr }}</span>
+	  </div>
+	</div>
+	{% endfor %}
 </div>
-{% endfor %}
-
