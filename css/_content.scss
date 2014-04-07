@@ -68,10 +68,10 @@ img.grayscale:hover {
 	.image-container-content {
 		position: absolute;
 		width: 100%;
-		height: 2*$baseline;
+		height: $baseline;
 		background-color: rgba(155,189,120,0.85);
 		color: $colorBG;
-		top: 312px - 2*$baseline;
+		top: 312px - $baseline;
 		text-align: center;
 		left: 0;
 

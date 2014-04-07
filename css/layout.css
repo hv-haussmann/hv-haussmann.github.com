@@ -962,10 +962,10 @@ img.grayscale:hover {
   .image-container .image-container-content {
     position: absolute;
     width: 100%;
-    height: 52px;
+    height: 26px;
     background-color: rgba(155, 189, 120, 0.85);
     color: white;
-    top: 260px;
+    top: 286px;
     text-align: center;
     left: 0; }
     .image-container .image-container-content span {
