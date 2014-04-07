@@ -1,8 +1,7 @@
 ---
 layout: ref_entry
-street: Strasse 7
-distr: Stadtteil 7
-image: /img/p8.png
+distr: Reinickendorf
+image: /img/p9.png
 width: 460
 height: 312
 type: big

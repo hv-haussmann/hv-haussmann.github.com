@@ -1,8 +1,7 @@
 ---
 layout: ref_entry
-street: Strasse 8
-distr: Stadtteil 8
-image: /img/p9.png
+distr: Kreuzberg
+image: /img/p8.png
 width: 460
 height: 312
 type: big

@@ -1,8 +1,7 @@
 ---
 layout: ref_entry
-street: Strasse 2
-distr: Stadtteil 2
-image: /img/p3.png
+distr: Schöneberg
+image: /img/p4.png
 width: 220
 height: 312
 type: small

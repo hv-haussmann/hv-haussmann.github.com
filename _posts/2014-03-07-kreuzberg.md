@@ -1,7 +1,6 @@
 ---
 layout: ref_entry
-street: Strasse 4
-distr: Stadtteil 4
+distr: Wilmersdorf
 image: /img/p5.png
 width: 220
 height: 312
