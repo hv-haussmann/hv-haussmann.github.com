@@ -832,7 +832,7 @@ body {
   overflow-y: scroll; }
 
 #tagline {
-  height: 52px;
+  min-height: 52px;
   line-height: 52px;
   background-color: #3f474a;
   color: #9bbd78; }
@@ -908,8 +908,6 @@ footer {
 
 #start span {
   margin-left: 13px; }
-#start p {
-  margin-bottom: 104px; }
 
 .map-container {
   position: relative;

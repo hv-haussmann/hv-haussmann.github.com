@@ -3,7 +3,7 @@ body {
 }
 
 #tagline {
- height: 2*$baseline;
+ min-height: 2*$baseline;
  line-height: 2*$baseline;
  background-color: $colorTopBottom;
  color: $colorImp;
