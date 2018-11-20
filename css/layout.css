@@ -114,7 +114,9 @@ table {
 ================================================== */
 body {
   background: #fff;
-  font: 16px/26px "Open Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 26px;
   color: #444444;
   -webkit-font-smoothing: antialiased;
   /* Fix for webkit rendering */
@@ -829,6 +831,30 @@ or wrap each row of columns in a <div class="row"> */
 	    font-weight: normal;
 	    font-style: normal; }
 */
+
+
+/* #Font-Face
+================================================== */
+/* open-sans-regular - latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'),
+       url('../fonts/open-sans-v15-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/open-sans-v15-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* open-sans-600 - latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: bold;
+  font-weight: 600;
+  src: local('Open Sans SemiBold'), local('OpenSans-SemiBold'),
+       url('../fonts/open-sans-v15-latin-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/open-sans-v15-latin-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+
 body {
   overflow-y: scroll; }
 
@@ -983,7 +1009,9 @@ img.grayscale:hover {
 /* #Links
 ================================================== */
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal; }
 
 a.link {
   border-bottom: 1px dotted;
@@ -1024,7 +1052,7 @@ div.privacy-msg p a {
   background-color: #3f474a;
   color: #fff;
   padding: 5px;
-  font-weight: 700;
+  font-weight: bold;
   line-height: 39px;
   text-transform: uppercase;
 }
