@@ -1053,6 +1053,11 @@ div.privacy-msg p a {
   color: #fff;
   padding: 5px;
   font-weight: bold;
-  line-height: 39px;
+  line-height: 65px;
   text-transform: uppercase;
+}
+
+div.privacy-msg p a:hover {
+  color: #333;
+  background-color: #bbbbbb;
 }
